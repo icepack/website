@@ -65,7 +65,8 @@ python3 -m ipykernel install --user --name=firedrake
 Run the demo notebooks:
 
 ```shell
-cd $VIRTUAL_ENV/src/icepack/demo
+cd $VIRTUAL_ENV/src/icepack/notebooks
+jupyter notebook
 ```
 
 ### Comments
