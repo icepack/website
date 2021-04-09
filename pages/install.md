@@ -7,6 +7,7 @@
 .. link:
 .. description:
 .. type: text
+.. hidetitle: True
 -->
 
 This page will tell you how to install icepack and its main dependency, the [Firedrake](https://firedrakeproject.org) package.

@@ -7,6 +7,7 @@
 .. link: 
 .. description: 
 .. type: text
+.. hidetitle: True
 -->
 
 If you have questions that aren't answered in these pages, if you run into problems that you don't know how to solve, or you want to get involved and don't know how, please reach out.
