@@ -47,7 +47,6 @@ NAVIGATION_LINKS = {
         ("/", "Home"),
         ("/install/", "Install"),
         ("/tutorials/", "Tutorials"),
-        ("/how-to/", "How-to"),
         ("/developers/", "Development"),
         ("/physics/", "Physics"),
         ("/contact/", "Contact"),

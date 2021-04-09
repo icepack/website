@@ -30,12 +30,7 @@ pages/notebooks/%.ipynb: executed-notebooks/%.ipynb
 	    $@
 	jq '.metadata.nikola += {hidetitle: "True"}' $@ | sponge $@
 
-# Make the tutorials page from a template by filling in a list of all the demos
-# found in the `pages/` directory
-pages/tutorials.rst pages/how-to.rst &: notebooks make_notebook_pages.py
-	python3 make_notebook_pages.py
-
-all: notebooks pages/tutorials.rst pages/how-to.rst
+all: notebooks
 	nikola build
 
 clean:
