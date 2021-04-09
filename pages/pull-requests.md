@@ -27,6 +27,8 @@ Give the branch a name that clearly indicates what you're trying to achieve with
 * **Implement your changes** in a series of commits, each of which roughly does one small, atomic thing at a time.
 Keeping changes small helps the other developers easily digest each individual unit of work to provide the best feedback possible.
 Give a clear description of that change in the commit message.
+* **Clean up** your code by running [black](https://black.readthedocs.io/en/stable/) on it.
+This will deal with line wrapping and other annoying formatting minutia.
 * **Create a [pull request](https://github.com/icepack/icepack/pulls)** on the project page.
 In the pull request description, you'll start by saying something like "Resolves issue #X."
 The issue will get automatically linked to the pull request.
@@ -39,7 +41,8 @@ You can always add new commits that fix any problems you find to your branch and
 They might request some changes from you.
 *Code review involves a lot of back-and-forth*, especially for complicated patches or features.
 This is totally normal!
-* Some projects might ask you to *rebase* your branch either on top of upstream changes, or to make the commit history easier to digest later.
+* We might ask you to **rebase** your branch either on top of upstream changes, or to make the commit history easier to digest later.
+Rebasing is a little hard the first time, so we're happy to walk you through it.
 * Finally, another developer will **merge your pull request**.
 
 The point of all this bureaucracy is to make sure that all the code we commit to the master branch of icepack is correct and ready for others to use.
@@ -60,7 +63,8 @@ Jupyter notebooks have lots other unnecessary metadata that this command can rem
 
 ### Coding style
 
-We don't have a rigorously enforced coding style.
-Nonetheless, we do use tools like flake8 and pylint to help us be consistent and clear in things like formatting, identifier naming, and overall code structure.
-If you're not already familiar with these tools, please see the [style](/style/) section for more information.
-Running flake8 and pylint on your code and making the suggested changes before making a pull request will help it get reviewed faster because we mostly won't have to address coding style.
+We use the tool [black](https://black.readthedocs.io/en/stable/) to help clean up the code.
+This program will automatically adjust line wrapping, quote styles, and the like so that you don't have to.
+The test suite will report a failure if the code hasn't been formatted first.
+There are other less clear-cut issues of coding style that only another person can catch, for example things like whether identifier names clearly indicate what a variable is supposed to mean.
+See the [coding style](/style/) page for more information.
